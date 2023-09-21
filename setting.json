@@ -1,0 +1,76 @@
+{
+  "workbench.colorTheme": "Default Dark+",
+  "vim.leader": "<Space>",
+  "vim.insertModeKeyBindings": [
+    { "before": ["f", "d"], "after": ["<esc>"] }
+  ],
+  "editor.lineNumbers": "relative",
+  "vim.useSystemClipboard": false,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // switch  buffers
+    { "before": ["leader", "b", "p"], "commands": [":bprevious"] },
+    { "before": ["leader", "b", "n"], "commands": [":bnext"] },
+
+    // splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+
+    // panes
+    {
+      "before": ["leader", "w", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "w", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "w", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "w", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+      "before": ["leader", "f", "t"],
+      "commands": ["workbench.explorer.fileView.focus"]
+    },
+    {
+      "before": ["leader", "f", "s"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["leader", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["leader", "f", "c"],
+      "commands": ["editor.action.formatDocument"]
+    }
+  ],
+
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "editor.lineHeight": 24,
+  "editor.cursorBlinking": "expand",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false
+}
